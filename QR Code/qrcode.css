@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#hi,#hii,#hiii,#hiiii,#hiiiii{
+    color: white;
+    position: relative;
+    bottom: 25px;
+    font-weight: 500;
+}
+
+#text{
+    color: black;
+    border: 3px solid white;
+    width: 130px;
+    padding: 10px;
+    font-size: 15px;
+    position: relative;
+    top: 40px;
+    left: 40px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: 900;
+    font-style: italic;
+}
+
+#lg,#sgn{
+    color: black;
+    border: 2px solid white;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 900;
+    position: relative;
+    left: 990px;
+    bottom: 80px;
+    margin-left: 20px;
+}
+
+
+#container1{
+    border: 7px solid white;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    left: 420px;
+    top: 50px;
+    border-radius: 10px;
+    box-shadow:5px 5px 13px white,-5px -5px 13px white;
+    background-color: aliceblue;
+    color: black;
+}
+
+#give{
+    border: 2px solid black;
+    position:absolute;
+    left: 50px;
+    top: 40px;
+    /*border-radius: 10px;*/
+    padding: 5px;
+}
+
+#btn1{
+    position: absolute;
+    top:78px;
+    border: 2px solid darkblue;
+    left: 50px;
+    width: 305px;
+    background-color: darkblue;
+    color: white;
+    /*border-radius: 10px;*/
+}
+
+#container2{
+    position: absolute;
+    top: 120px;
+    left: 125px;
+}
+
+i{
+    color: white;
+    position: relative;
+    left: 560px;
+    top: 75px;
+}
+.fa-facebook{
+    color: rgb(15, 166, 225);
+}
+.fa-instagram {
+    color: orangered;
+}
+.fa-twitter{
+    color: skyblue;
+}
+.fa-linkedin{
+    color: rgb(46, 110, 230);
+}
+p{
+    color: white;
+    position: relative;
+    font-size: 13px;
+    position: relative;
+    top: 80px;
+}
+
+#img1{
+    position: relative;
+    bottom: 450px;
+    margin-left: 90px;
+}
+
+#text3{
+    color: white;
+    position: relative;
+    bottom: 850px;
+    margin-left: 470px;
+    font-size: 17px;
+    border: 2px solid rgb(10, 10, 112);
+    width: 300px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(10, 10, 104);
+    box-shadow: 5px 5px 5px white;
+}
+
+#cpy{
+    margin-left: 550px;
+}
