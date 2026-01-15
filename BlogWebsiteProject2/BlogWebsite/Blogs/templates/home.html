@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        body{
+            width: 900px;
+        }
+        #image1{
+            position: relative;
+            left: 30px;
+            bottom: 540px;
+            border-radius: 100px;
+            border: 1px solid blue;
+            box-shadow: 5px 5px 15px aliceblue, -5px -5px 15px  aliceblue ;
+        }
+        #text1{
+            position: relative;
+            color: aliceblue;
+            bottom: 580px;
+            left: 110px;
+            font-size: 20px;
+            font-weight: 900;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+        .h-screen{
+            width: 1270px;
+            height: 600px;
+        }
+        #container1{
+            height: 600px;
+        }
+        ul,li{
+            display: inline;
+        }
+        nav{
+            position: relative;
+            bottom: 615px;
+            margin-left: 400px;
+        }
+        a{
+            text-decoration: none;
+            border: 1px solid aliceblue;
+            background-color: aliceblue;
+            color: black;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900;
+            font-style: italic;
+            padding: 8px;
+            border-radius: 10px;
+        }
+        a:hover{
+            background-color: rgb(9, 95, 9);
+            color: aliceblue;
+            border: 1px solid rgb(9, 89, 9);
+            box-shadow: 5px 5px 15px aliceblue, -5px -5px 15px aliceblue;
+        }
+        .link1{
+            margin-left: 20px;
+        }
+        .link2{
+            position: relative;
+            left: 230px;
+        }
+        .linktwo{
+           position: relative;
+           left: 750px;
+           bottom: 30px;
+        }
+    .neon-text {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    animation: glow 1.5s infinite alternate;
+    position: relative;
+    top: 270px;
+    margin-left: 330px;
+    font-size: 40px;
+    font-weight: 900;
+   font-style: italic;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
+}
+#para1{
+    color: aliceblue;
+    position: relative;
+    top: 310px;
+    margin-left: 390px;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid aliceblue;
+    width: 400px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    box-shadow: 5px 5px 15px yellowgreen, 5px 5px 15px green, 5px 5px 15px yellow, 5px 5px 15px aliceblue,-5px -5px 15px yellowgreen, -5px -5px 15px green, -5px -5px 15px yellow, -5px -5px 15px aliceblue;
+}
+.link3{
+    position: relative;
+    top: 340px;
+    margin-left: 550px;
+}
+.para2{
+    color: aliceblue;
+    position: relative;
+    top: 400px;
+    margin-left: 470px;
+    background: none;
+    border: 0px;
+}
+.para2:hover{
+    color:rgb(183, 234, 81);
+    background: none;
+    border: 0px;
+    box-shadow: none;
+    text-shadow: 5px 5px 15px green, -5px -5px 15px green;
+}
+.link4{
+    color: aliceblue;
+    position: relative;
+    left: 20px;
+}
+.icons{
+    position: relative;
+    top: 430px;
+    font-size: 17px;
+    right: 170px;
+    padding: 3px;
+    color: black;
+}
+       .fa-facebook:hover{
+            background-color:rgb(27, 132, 173);
+            color: aliceblue;
+            border: 1px solid rgb(27, 132, 173);
+            box-shadow: 5px 5px 15px rgb(27, 132, 173), -5px -5px 15px rgb(27, 132, 173);
+        }
+        .fa-linkedin:hover{
+            background-color:rgb(27, 132, 173);
+            color: aliceblue;
+            border: 1px solid rgb(27, 132, 173);
+            box-shadow: 5px 5px 15px rgb(27, 132, 173), -5px -5px 15px rgb(27, 132, 173);
+        }
+        .fa-x-twitter:hover{
+            background-color:black;
+            color: aliceblue;
+            border: 1px solid black;
+            box-shadow: 5px 5px 15px black, -5px -5px 15px black;
+        }
+        .fa-instagram:hover{
+            background-color:orangered;
+            color: aliceblue;
+            border: 1px solid orangered;
+            box-shadow: 5px 5px 15px orangered, -5px -5px 15px orangered;
+        }
+        #cookieNotice{
+            border: 2px solid white;
+            width: 450px;
+            height: 330px;
+            padding: 20px;
+            box-shadow: 7px 7px 15px gray;
+            border-radius: 20px;
+            margin-left: 400px;
+            background: aliceblue;
+            position: relative;
+            bottom: 752px;
+        }
+        .btn-primary{
+            position: relative;
+            top: 10px;
+            margin-left: 40px;
+            border: 2px solid green;
+            border-radius: 20px;
+            width: 300px;
+            background-color:green;
+            color: aliceblue;
+            font-size: 15px;
+            padding: 10px;
+        }
+        .btn-primary:hover{
+            background-color: rgb(10, 87, 10);
+            border: 2px solid rgb(10, 87, 10);
+        }
+        #para50{
+            position: relative;
+            top: -10px;
+            font-weight: 500;
+        }
+        #text50{
+            margin-left: 150px;
+            position: relative;
+            top: -45px;
+            font-size: 20px;
+        }
+        #img3{
+            margin-left: 60px;
+        }
+        #privacy:hover{
+            color: aliceblue;
+        }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+    </style>
+</head>
+<body>
+    <div id="container1">
+        <div class="h-screen w-screen bg-cover bg-center bg-no-repeat bg-[url(https://cdn.wallpapersafari.com/64/26/m4ojCw.jpg)] ...">
+              <div class="neon-container">
+         <h1 class="neon-text">Welcome to SamaharZen Oasis</h1>
+        </div>
+        <p id="para1">“Blogging is a conversation, not a code.”</p>
+        <a href="{% url 'login' %}" class="link3">Blogs</a>
+        <a href="{% url 'login' %}" class="para2">@SamaharZenOasis2025</a>
+        <a href="https://www.facebook.com/" class="icons"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/" class="icons"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.x.com/" class="icons"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/" class="icons"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <img id="image1" src="https://images.scalebranding.com/elegant-letter-s-logo-56a3ecef-2a42-4427-b827-67d4c7f87634.jpg" width="60px" height="60px">
+        <h1 id="text1">SamaharZen Oasis</h1>
+        <nav>
+            <ul>
+                <i class="fa-solid fa-house link4"></i>
+                <li><a href="{% url 'login' %}" class="link1">Home</a></li>
+                <i class="fa-solid fa-circle-info link4"></i>
+                <li><a href="{% url 'login' %}" class="link1">About</a></li>
+                <i class="fa-solid fa-circle-user link4"></i>
+                <li><a href="{% url 'login' %}" class="link1">Contact us</a></li>
+                <li><a href="{% url 'signup' %}" class="link2">Sign up</a></li>
+                <li><a href="{% url 'login' %}" class="link2 linktwo">Login</a></li>
+            </ul>
+        </nav>
+
+        <div id="cookieNotice" class="light display-right" style="display: none;">
+        <div id="closeIcon" style="display: none;">
+        </div>
+        <div class="title-wrap">
+            <img id="img3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Bi2EypaWzroTddcXr7SpAywAli4g0wPw1A&s" width="90px" height="60px">
+            <h4 id="text50">Cookie Consent</h4>
+        </div>
+        <div class="content-wrap">
+            <div class="msg-wrap">
+                <p id="para50">This website uses cookies or similar technologies, to enhance your browsing experience and provide personalized recommendations. By continuing to use our website, you agree to our  <a href="/privacy-policy" id="privacy">Privacy Policy</a></p>
+                <div class="btn-wrap">
+                    <button class="btn-primary" onclick="acceptCookieConsent();">Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    </div>
+    
+    <script>
+    function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+   }
+
+    function deleteCookie(cname) {
+    const d = new Date();
+    d.setTime(d.getTime() + (24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=;" + expires + ";path=/";
+  }
+
+    function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+  }
+
+
+    function acceptCookieConsent(){
+    deleteCookie('user_cookie_consent');
+    setCookie('user_cookie_consent', 1, 30);
+    document.getElementById("cookieNotice").style.display = "none";
+  }
+
+   let cookie_consent = getCookie("user_cookie_consent");
+    if(cookie_consent != ""){
+      document.getElementById("cookieNotice").style.display = "none";
+    }else{
+      document.getElementById("cookieNotice").style.display = "block";
+  }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fdff0595e6.js" crossorigin="anonymous"></script>
+</body>
+</html>

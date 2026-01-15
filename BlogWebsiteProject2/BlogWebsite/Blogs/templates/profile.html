@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<style>
+body {
+    display: grid;
+    place-items: center;
+    background: black
+}
+
+.card {
+	color:#fff;
+    width: 350px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, rgb(9, 9, 158), rgb(16, 16, 171));
+    box-shadow:  5px 5px 15px gray;
+    border: none;
+    height: 400px;
+}
+
+.neo-button {
+    width: 40px;
+    height: 40px;
+    outline: 0 !important;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 50%;
+background: linear-gradient(145deg, #9a40a9, #b74cc9);
+box-shadow: inset 20px 20px 60px #913ca0, 
+             inset -20px -20px 60px #c552d8;
+}
+
+.num{
+	
+	color:#eee !important;
+}
+
+.line{
+	color:#fff;
+}
+
+.neo-button:active {
+   border-radius: 50%;
+background: #AB47BC;
+box-shadow:  28px 28px 57px #933da2, 
+             -28px -28px 57px #c351d6;
+}
+
+.fa-facebook {
+    color: #3b5998
+}
+
+.fa-linkedin {
+    color: #0077b5
+}
+
+.fa-google {
+    color: #dc4e41
+}
+
+.fa-youtube {
+    color: #cd201f
+}
+
+.fa-twitter {
+    color: #55acee
+}
+
+.profile_button{
+color:#fff;
+padding:10px; 
+border:none;
+outline:0 !important;
+border-radius: 50px;
+background: green;
+text-decoration: none;
+position: relative;
+left: 50px;
+}
+.profile_button:hover{
+    background-color: rgb(7, 84, 7);
+}
+.d-flex{
+    position: relative;
+    top: 150px;
+}
+.alert{
+    background-color: rgb(115, 8, 8);
+    color: aliceblue;
+}
+.btn-close:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.px-6{
+    border: 1px solid rgb(205, 12, 118);
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    position: relative;
+    top: 70px;
+    right: 100px;
+}
+.px-6:hover{
+    background-color: rgb(205, 12, 118);
+    color: aliceblue;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+</style>
+</head>
+<body>
+    {% for message in messages %}
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>{{message}}</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+    <div class="container d-flex justify-content-center">
+    <div class="card p-3 py-4">
+        <div class="text-center"> 
+		<img src="{{user.profile.image.url}}" width="100" class="rounded-circle">
+            <h3 class="mt-2">{{user.username}}</h3>
+			<span class="mt-1 clearfix">{{user.email}}</span>
+			  
+			 <div class="profile mt-5">
+			 
+			 <a href="{% url 'update_profile' %}" class="profile_button px-5">Update profile</a>
+             <a href="{% url 'home2' %}" class="home_button px-6">Go Home</a>
+
+		</div>
+			   
+        </div>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fdff0595e6.js" crossorigin="anonymous"></script>
+</body>
+</html>
